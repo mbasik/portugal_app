@@ -1,0 +1,11 @@
+{% extends 'blog/base.html'%}
+
+{% block content%}
+	<a class="btn btn-default" href="{% url 'hostel_list' %}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<div class="place">
+		<h1>{{hostel.name}}</h1>
+		<p>{{hostel.body}}</p>
+		<br>Adres:<h5>{{hostel.city}}<br>{{hostel.address}}</h5>
+ 		<a class="btn btn-default" href="{% url 'recommended_delete' pk=recommended.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+ 	</div>
+{% endblock %}

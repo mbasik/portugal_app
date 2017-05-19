@@ -1,0 +1,227 @@
+body{
+    background-image: url('images/flag.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+h1 a {
+    color: #FCA205;
+    font-family: 'Lato';
+    text-decoration: none;
+}
+h4{
+    font-family: 'Lato';
+}
+h5{
+    font-style: italic;
+}
+h6{
+    font-family: 'Lato';
+    font-size: 30px;
+    color: gold;
+    text-decoration: none;
+}
+h6:hover{
+    text-decoration: none;
+}
+.page-header {
+    background-color: white;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: dark blue;
+    font-size: 36pt;
+    text-decoration: none;
+}
+.important{
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 40px;
+}
+div.boczny{
+    position: fixed;
+    margin-left: 800px;
+    display: inline;
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lato', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+.category{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    opacity: 0.8;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-top: 10px;
+}
+.culture{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    background-image: url('images/kogut.png');
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.more{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 5px;
+    font-size: 80px;
+    font-family: 'Lato';
+    color: transparent;
+    text-decoration: none;
+    text-align: right;
+}
+.more:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+.places{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    left:500px;
+    background-image: url('images/portugal.png');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center;
+}
+.places:hover{
+
+}
+.language{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    top: 330px;
+    background-image: url('images/language.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+.language:hover{
+
+}
+.author{
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    left:500px;
+    top:330px;
+    background-image: url('images/pioro.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+.author:hover{
+   
+}
+.post{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.6);
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fiszka{
+    background-color: rgba(255, 255, 255, 0.6);
+    font-family: 'Lato';
+    color: black;
+    margin-left: 200px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    word-spacing: 10px;
+    margin-top: 50px;
+    width:600px;
+    height: 400px;
+}
+.words{
+    background-color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    margin-top: 80px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.words:hover{
+    text-decoration: none;
+}
+.comment{
+    background-color: white;
+    opacity: 0.8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.city{
+    background-color: white;
+    opacity: 0.8;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.place{
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 450px;
+    width: 1000px;
+    text-decoration: none;
+}

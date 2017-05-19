@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<a class="btn btn-default" href="{% url 'place_list' %}"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+	 <div class="boczny">
+        <br><h4>Znajdź szybko atrakcje w {{ place.name }}</h4>
+        <br><a class="btn btn-default" href="{% url 'restaurante_list' %}">Restauracje </a> 
+        <a class="btn btn-default" href="{% url 'hostel_list' %}">Hostele </a> 
+        <a class="btn btn-default" href="{% url 'museum_list' %}">Muzea </a> 
+    </div>
+	<div class="city">
+    	<h1>{{ place.name }}</h1>
+    	<p> {{ place.text }}</p>
+    	<img src='{{ instance.image.url }}' />
+
+	</div>
+      
+    <br><br><a class="btn btn-default" href="{% url 'place_edit' pk=place.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    <a class="btn btn-default" href="{% url 'place_delete' pk=place.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+    <a class="btn btn-default" href="{% url 'add_recommended' pk=place.pk %}">Dodaj atrakcje w pobliżu</a> 
+{% endblock %}

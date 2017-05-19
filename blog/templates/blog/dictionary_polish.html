@@ -1,0 +1,20 @@
+{% extends 'blog/base.html'%}
+
+{% block content%}
+	<a class="btn btn-default" href="{% url 'category_list' %}"><span class="glyphicon glyphicon-chevron-left"></span></a>    
+	<a href="{% url 'words_list' %}"><h6>portugalsko-polski</h6></a>
+	<form method="GET" action="">
+		<input type='text' name='q' placeholder='Wpisz słówko' />
+		<input type="submit" value='Szukaj' />
+	</form>
+
+	<a href="{% url 'word_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+	<div class="words">
+		{% for word in words %}
+			<br><h2><a href ="{% url 'word_translation' pk=word.pk %}">{{ word.polish_word }}</a></h2>
+	  	{% empty %}
+            <p> Nie ma takiego słówka na stronie:( </p>
+		{% endfor %}
+	</div>
+{% endblock %}
+

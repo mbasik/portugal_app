@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <a class="btn btn-default" href="{% url 'place_list' %}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+     <div class="place">   
+        {% for recommended in museums %}
+            {% if recommended.category == 'Muzeum' %}
+                <a href = "{% url 'museum_detail' pk=recommended.pk %}"> <h1>{{ recommended.name }}</h1></a>
+                <br>{{ recommended.city }}
+            {% endif %}
+        {% empty %}
+                Is empty?!
+        {% endfor %}
+    </div>
+{% endblock %}
+

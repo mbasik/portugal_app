@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<a class="btn btn-default" href="{% url 'dictionary_polish' %}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<div class="fiszka">
+		<h1>{{ word.portuguese_word }}-->{{ word.polish_word }}</h1>
+		<hr>{{ word.note }}
+	</div>
+
+	<br><br><a class="btn btn-default" href="{% url 'word_edit' pk=word.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+	<a class="btn btn-default" href="{% url 'word_delete' pk=word.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+{% endblock %}

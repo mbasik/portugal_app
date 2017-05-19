@@ -1,0 +1,8 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<form method="POST" entype='multipart/form-data' class="post-form"> {% csrf_token %}
+		{{ form.as_p }}
+		<button typ="submit" class="save btn btn-default">Zapisz</button>
+	</form>
+{% endblock %}

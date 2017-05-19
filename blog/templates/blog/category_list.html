@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Poznaj Portugalię</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+  <body>
+    <div class="category">
+      <div class="culture">
+        <a href="{% url 'post_list' %}" class="more" >Kultura</a>
+      </div>
+      <div class="places">
+        <a href="{% url 'place_list' %}" class="more" >Miejsca</a>
+      </div>               		
+      <div class="language">
+        <a href="{% url 'words_list' %}" class="more" >Język</a>
+      </div>               	
+      <div class="author">
+        <a href="{% url 'author' %}" class="more">Kontakt</a>
+      </div>
+    </div>
+  </body>
+</html>

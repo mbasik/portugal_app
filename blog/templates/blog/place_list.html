@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <a class="btn btn-default" href="{% url 'category_list' %}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a href="{% url 'place_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <div class="boczny">
+        <br><h4>Znajdź szybko atrakcje w Portugali:</h4>
+        <br><a class="btn btn-default" href="{% url 'restaurante_list' %}">Restauracje </a> 
+        <a class="btn btn-default" href="{% url 'hostel_list' %}">Hostele </a> 
+        <a class="btn btn-default" href="{% url 'museum_list' %}">Muzea </a> 
+    </div>
+	{% for place in places %}
+        <div class="post">
+            <h1><a href="{% url 'place_detail' pk=place.pk %}">{{ place.name }}</a></h1>
+    		<p> {{ place.text }}
+    		<br>Współrzędne geograficzne:{{ place.parametr }}</p>
+       	</div>
+    {% empty %}
+            <p> Ta strona nie zawiera jeszcze miejsc </p>
+    {% endfor %}
+
+{% endblock %}

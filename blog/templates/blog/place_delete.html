@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<h1>Potwierdź usunięcie</h1>
+	<a href="{% url 'place_list' %}" class="btn btn-danger">Usuń</a>
+    <br><a class="btn btn-default" href="{% url 'category_list' %}">Nie usuwaj</a> 
+{% endblock %}

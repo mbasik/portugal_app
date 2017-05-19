@@ -1,0 +1,20 @@
+{% extends 'blog/base.html'%}
+
+{% block content%}
+  <a class="btn btn-default" href="{% url 'category_list' %}"><span class="glyphicon glyphicon-chevron-left"></span></a> <br>
+  <h1>{{author.name}}</h1>
+
+  <form name="kontakt" action="URL" method="POST">
+    <fieldset>
+      <legend>Napisz do mnie!</legend>
+  		  <label for="name">Imię:</label>
+  		  <input type="text" name="name" id="name">
+  		  <br><label for="email">Email:</label>
+  		  <input type="email" name="email" id="email">
+  		  <br><textarea cols="40" rows="10" name="text"></textarea>
+  		  <input type="submit" name="submit" value="Wyślij">
+  	</fieldset>
+  </form>
+
+  <a class="btn btn-default" href="{% url 'add_author' %}"><span class="glyphicon glyphicon-plus"></span></a>
+{% endblock %}
